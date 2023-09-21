@@ -3,6 +3,6 @@ spring:
     generate-unique-name: false
     name: tacocloud
   cassandra:
-    keyspace-name: taco_cloud
-    schema-action: recreate
-    local-datacenter: datacenter1
+      keyspace-name: taco_cloud
+      schema-action: recreate
+      local-datacenter: datacenter1
