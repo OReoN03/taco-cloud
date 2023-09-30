@@ -2,13 +2,11 @@ package tacos;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import tacos.data.IngredientRepository;
 
 @Configuration
-@ComponentScan
 public class DataConfig {
     @Bean
     public CommandLineRunner dataLoader(IngredientRepository repo) {

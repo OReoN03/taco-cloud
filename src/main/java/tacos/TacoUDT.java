@@ -3,6 +3,7 @@ package tacos;
 import java.util.List;
 import org.springframework.data.cassandra.core.mapping.UserDefinedType;
 import lombok.Data;
+
 @Data
 @UserDefinedType("taco")
 public class TacoUDT {
