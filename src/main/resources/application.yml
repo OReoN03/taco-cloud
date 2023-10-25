@@ -1,12 +1,39 @@
 spring:
   datasource:
-    generate-unique-name: false
-    name: tacocloud
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tacocloud
+    username: root
+    password: admin
+    hikari:
+      schema:
+      - schema.sql
+  sql:
+    init:
+      mode: always
   security:
-    oauth2:
-      client:
-        registration:
-          facebook:
-            client-id: <facebook client id>
-            client-secret: <facebook client secret>
-            scope: email, public_profile
+    user:
+      name: buzz
+      password: infinity
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+server:
+  port: 8443
+  ssl:
+    key-store: classpath:mykeys.jks
+    key-store-type: jks
+    key-store-password: letmein
+    key-password: letmein
+    enabled: true
+
+logging:
+  file:
+    path: /var/logs/
+    name: TacoCloud.log
+  level:
+    root: WARN
+    org.springframework.security: debug
+taco:
+  orders:
+    page-size: 10

@@ -7,7 +7,7 @@ import lombok.*;
 @Data
 @Entity
 @AllArgsConstructor
-@NoArgsConstructor(access = AccessLevel.PUBLIC, force = true)
+@NoArgsConstructor(access = AccessLevel.PRIVATE, force = true)
 public class Ingredient {
     @Id
     private final String id;
