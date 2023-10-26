@@ -17,11 +17,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import lombok.extern.slf4j.Slf4j;
 
-import tacos.Ingredient;
-import tacos.Ingredient.Type;
-import tacos.Taco;
-import tacos.TacoOrder;
-import tacos.User;
+import tacos.domain.Ingredient;
+import tacos.domain.Ingredient.Type;
+import tacos.domain.Taco;
+import tacos.domain.TacoOrder;
+import tacos.domain.User;
 import tacos.data.IngredientRepository;
 import tacos.data.TacoRepository;
 import tacos.data.UserRepository;

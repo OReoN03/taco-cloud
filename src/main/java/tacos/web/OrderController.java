@@ -10,8 +10,8 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
 
-import tacos.TacoOrder;
-import tacos.User;
+import tacos.domain.TacoOrder;
+import tacos.domain.User;
 import tacos.data.OrderRepository;
 
 @Controller

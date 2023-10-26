@@ -1,4 +1,4 @@
-package tacos;
+package tacos.domain;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;

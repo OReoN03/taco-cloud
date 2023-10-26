@@ -3,7 +3,7 @@ package tacos.web.api;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import tacos.TacoOrder;
+import tacos.domain.TacoOrder;
 import tacos.data.OrderRepository;
 
 @RestController

@@ -4,10 +4,9 @@ import java.util.Date;
 import java.util.List;
 
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import tacos.TacoOrder;
-import tacos.User;
+import tacos.domain.TacoOrder;
+import tacos.domain.User;
 
 public interface OrderRepository extends CrudRepository<TacoOrder, Long> {
     List<TacoOrder> findByDeliveryZip(String deliveryZip);
